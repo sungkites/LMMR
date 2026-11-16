@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "HotpotQA",
+    "questions": 7405,
+    "url": "https://hotpotqa.github.io/",
+    "repository": "https://github.com/hotpotqa/hotpot"
+  },
+  {
+    "dataset": "2WikiMultihopQA",
+    "questions": 12576,
+    "repository": "https://github.com/Alab-NII/2wikimultihop"
+  },
+  {
+    "dataset": "MuSiQue",
+    "questions": 2417,
+    "repository": "https://github.com/StonyBrookNLP/musique"
+  }
+]

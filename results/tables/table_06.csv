@@ -1,0 +1,18 @@
+Category,Parameter,Value
+Memory selection,B; K_e; K_a; K_s,400 tokens; 2; 2; 3
+Scoring,τ; α; β; η,2; 1.2; 1; 0.7
+Node lengths,Coarse / fine,192 / 96 reranker tokens
+Training examples,Training / development; paired positives,"1,600 / 64; 1,207 paired-positive questions"
+Control and negatives,Coarse-only control; hard negatives,381 questions; top 2 non-supporting negatives per granularity
+Loss weights,m; lambda_r; lambda_B; lambda_c,0.5; 0.5; 0.25; 0.1
+LoRA,Base model; rank / scaling,Qwen3-Reranker 0.6B; 8 / 16
+Adaptation,Projections; trainable parameters,"Attention q and v in 28 layers; 1,146,880"
+Optimization,Optimizer; learning rate; weight decay,AdamW; 5e-5; 0.01
+Updates,Questions per step; steps; gradient-norm limit,4; 600; 1
+Precision,Initialization; training; evaluation,8-bit GGUF dequantization; BF16 base + FP32 adapters; merged FP16
+Candidate pools,HotpotQA; 2Wiki; MuSiQue,10 / 20 / 30 / 50; 10; 20 paragraphs
+Pool expansion,Additional HotpotQA sources,"BM25 (question + initial anchor), title deduplication"
+Budget analysis,Procedure,192 questions; selected evidence clipped at source boundaries
+Answer decoding,Quantization; temperature; maximum output,Q4_K_M; 0; 128 tokens
+Prompt and execution,Full reference-prompt limit; devices,768 tokens; A100 retrieval and Orin answering
+Intervals and tests,Paired resampling; primary-test correction,"Support-source sets; 4,000 draws; Holm"

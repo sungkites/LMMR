@@ -1,0 +1,22 @@
+{
+  "id": "hotpot-dev:5ae604ec5542996de7b71af9",
+  "question": "Which team did Joe Buck's father broadcast for?",
+  "paragraphs": [
+    {
+      "title": "Bob Buck",
+      "sentences": [
+        "Robert “Bob” Buck (1938 – January 22, 1996), was an American sportscaster and sports director.",
+        " He was the younger brother of late St. Louis Cardinals radio broadcaster Jack Buck, and was the uncle of national television sportscaster Joe Buck."
+      ]
+    },
+    {
+      "title": "Joe Buck",
+      "sentences": [
+        "Joseph Francis \"Joe\" Buck (born April 25, 1969) is an American sportscaster and the son of sportscaster Jack Buck.",
+        " He has won numerous Sports Emmy Awards for his work with Fox Sports, including his roles as lead play-by-play announcer for the network's National Football League and Major League Baseball coverage, and is a three-time recipient of the National Sportscaster of the Year award.",
+        " Since 1996, he has served as the play-by-play announcer for the World Series, each year, with the exceptions of 1997 and 1999."
+      ]
+    }
+  ],
+  "source_id": "5ae604ec5542996de7b71af9"
+}

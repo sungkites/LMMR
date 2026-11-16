@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.*
+.DS_Store
+models/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.safetensors
+*.gguf
+*.log
+*.sqlite*

@@ -1,0 +1,7 @@
+Configuration,F1,EM,Complete support (%),Support density (%),Evidence tokens
+Frozen hierarchy,56.65,42.08,63.46,42.25,179.22
+Frozen conditional hierarchy,57.90,42.92,65.91,42.13,183.22
+Coarse-only adaptation,60.04,44.71,80.85,33.90,240.61
+Without score smoothing,61.49,45.86,73.09,43.76,185.16
+Without redundant negatives,61.23,45.66,72.90,43.78,185.54
+LMMR,61.47,45.96,72.99,43.75,185.32

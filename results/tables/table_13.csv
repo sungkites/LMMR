@@ -1,0 +1,6 @@
+Method,F1,EM
+Query expansion,65.13,50.83
+Normalized MMR,65.47,51.10
+Coarse-only adaptation,66.77,52.13
+Frozen hierarchy,63.08,49.32
+LMMR,67.92,53.30

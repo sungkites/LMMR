@@ -1,0 +1,13 @@
+Dataset,Baseline,F1 gain,95% interval,Holm p
+2wiki10,Query expansion,+2.14,"[1.55, 2.72]",0.0030
+2wiki10,Normalized MMR,+1.77,"[1.20, 2.35]",0.0030
+2wiki10,Coarse-only adaptation,+2.28,"[1.69, 2.86]",0.0030
+2wiki10,Frozen hierarchy,+5.05,"[4.52, 5.57]",0.0030
+hotpot30,Query expansion,+3.06,"[2.43, 3.70]",0.0030
+hotpot30,Normalized MMR,+2.68,"[2.08, 3.34]",0.0030
+hotpot30,Coarse-only adaptation,+1.44,"[0.84, 2.04]",0.0030
+hotpot30,Frozen hierarchy,+4.82,"[4.24, 5.44]",0.0030
+musique20,Query expansion,+4.55,"[3.28, 5.83]",0.0030
+musique20,Normalized MMR,+4.61,"[3.33, 5.90]",0.0030
+musique20,Coarse-only adaptation,+3.93,"[2.75, 5.18]",0.0030
+musique20,Frozen hierarchy,+4.53,"[3.40, 5.71]",0.0030

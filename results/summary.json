@@ -1,0 +1,52 @@
+{
+  "title": "LMMR: Learned Multigranular Memory Retrieval for Small Language Model Agents",
+  "validation_questions": {
+    "HotpotQA": 7405,
+    "2WikiMultihopQA": 12576,
+    "MuSiQue": 2417,
+    "total_unique": 22398
+  },
+  "cross_model_scope": "Eight main answer models on HotpotQA; Nemotron reported separately",
+  "primary_setting": {
+    "answer_model": "Qwen3.5-2B-Q4_K_M",
+    "evidence_budget": 400,
+    "hotpot_paragraphs": 30
+  },
+  "main_results": [
+    {
+      "dataset": "HotpotQA",
+      "qe_f1": 58.42,
+      "lmmr_f1": 61.47,
+      "lmmr_em": 45.96,
+      "f1_gain": 3.06,
+      "qe_tokens": 240.92,
+      "lmmr_tokens": 185.32
+    },
+    {
+      "dataset": "2WikiMultihopQA",
+      "qe_f1": 41.12,
+      "lmmr_f1": 43.26,
+      "lmmr_em": 32.63,
+      "f1_gain": 2.14,
+      "qe_tokens": 242.47,
+      "lmmr_tokens": 177.94
+    },
+    {
+      "dataset": "MuSiQue",
+      "qe_f1": 26.02,
+      "lmmr_f1": 30.58,
+      "lmmr_em": 20.27,
+      "f1_gain": 4.55,
+      "qe_tokens": 259.01,
+      "lmmr_tokens": 189.21
+    }
+  ],
+  "tables": "tables/table_01.csv through table_18.csv",
+  "rounding": "Gains are rounded from unrounded paired aggregates; they may differ from subtracting displayed scores.",
+  "published_reference_tables": [
+    16,
+    17,
+    18
+  ],
+  "published_reference_scope": "External literature rows retain their original model sizes, sample counts, and retrieval settings."
+}

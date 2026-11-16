@@ -1,0 +1,7 @@
+Metric,Query expansion,Frozen conditional,LMMR
+Mean evidence tokens,232.34,178.01,182.18
+"Evidence selection, A100 (ms)",690.81,1116.36,1081.23
+"Prompt encoding, Orin (ms)",528.51,456.03,464.83
+"Answer generation, Orin (ms)",360.96,360.17,367.21
+Total request latency (ms),1927.87,2291.09,2271.93
+Edge generation (tokens/s),19.68,19.73,19.78

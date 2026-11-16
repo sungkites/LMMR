@@ -1,0 +1,9 @@
+Method,Answer model,Evaluation setting,EM,F1
+IRCoT[13],Flan-T5-XL 3B,Open domain / 500,—,65.10
+IRCoT[13],Flan-T5-XXL 11B,Open domain / 500,—,66.50
+IRCoT[13],GPT-3 175B,Open domain / 500,57.70,68.00
+Smart-Searcher[54],Qwen2.5-7B,Open domain / 500,—,61.20
+PER-QA RAG[55],8B + GPT-4o planner,Processed set / overall,—,54.60
+PER-QA RAG[55],8B + GPT-4o planner,Processed 2-hop bridge / 500,—,42.90
+LMMR,Qwen3.5-2B,"Controlled pool / 12,576",32.63,43.26
+LMMR,Qwen3.5-2B,"Controlled pool / 5,236 compositional",29.76,43.72

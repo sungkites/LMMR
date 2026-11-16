@@ -1,0 +1,7 @@
+Method,F1,EM,Support source (%),Complete support (%),Support density (%),AIC (%),Evidence tokens
+Query expansion,58.42,43.42,90.07,77.87,33.47,89.66,240.92
+Normalized MMR,58.79,43.69,90.43,78.18,33.46,90.33,242.05
+Coarse-only adaptation,60.04,44.71,91.53,80.85,33.90,92.23,240.61
+Frozen hierarchy,56.65,42.08,89.50,63.46,42.25,84.87,179.22
+Frozen conditional hierarchy,57.90,42.92,89.57,65.91,42.13,86.09,183.22
+LMMR,61.47,45.96,93.46,72.99,43.75,91.48,185.32

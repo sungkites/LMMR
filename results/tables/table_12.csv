@@ -1,0 +1,6 @@
+Method,Single F1,Single EM,Alias F1,Alias EM
+Query expansion,26.02,17.17,28.02,20.07
+Normalized MMR,25.97,17.13,27.93,20.02
+Coarse-only adaptation,26.65,17.50,28.64,20.31
+Frozen hierarchy,26.05,16.84,27.94,19.74
+LMMR,30.58,20.27,32.57,23.50

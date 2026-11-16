@@ -1,0 +1,6 @@
+Method,2Wiki F1,2Wiki EM,2Wiki tokens,MuSiQue F1,MuSiQue EM,MuSiQue tokens
+Query expansion,41.12,31.67,242.47,26.02,17.17,259.01
+Normalized MMR,41.49,31.99,243.72,25.97,17.13,259.96
+Coarse-only adaptation,40.98,31.46,244.10,26.65,17.50,255.13
+Frozen hierarchy,38.22,28.97,173.23,26.05,16.84,188.03
+LMMR,43.26,32.63,177.94,30.58,20.27,189.21

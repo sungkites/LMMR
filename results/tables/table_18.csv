@@ -1,0 +1,10 @@
+Method,Answer model,Evaluation setting,EM,F1
+IRCoT[13],Flan-T5-XL 3B,Open domain / 2--4 hops / 500,—,32.30
+IRCoT[13],Flan-T5-XXL 11B,Open domain / 2--4 hops / 500,—,30.80
+IRCoT[13],GPT-3 175B,Open domain / 2--4 hops / 500,26.50,36.50
+Smart-Searcher[54],Qwen2.5-7B,Open domain / mixed hops / 500,—,33.80
+PER-QA RAG[55],8B + GPT-4o planner,Processed set / 2--4 hops,—,24.30
+IRCoT[13],GPT-3 175B,Open domain / 2-hop,34.20,43.80
+PER-QA RAG[55],8B + GPT-4o planner,Processed 2-hop bridge / 500,—,30.60
+LMMR,Qwen3.5-2B,"Controlled pool / 2,417",20.27,30.58
+LMMR,Qwen3.5-2B,"Original 20 paragraphs / 1,252 2-hop",28.27,40.97
