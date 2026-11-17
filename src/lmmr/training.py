@@ -4,6 +4,25 @@ from collections import Counter
 import math
 
 
+def training_views(group, mode="paired"):
+    """Use the same question group, restricting positives to coarse views if requested.
+
+    A boundary-crossing group without a coarse view must explicitly supply a
+    supported ``coarse_positive``. It is never silently dropped or trained on a
+    fine view in the coarse-only control.
+    """
+    if mode == "paired":
+        return group["positive_views"]
+    if mode != "coarse":
+        raise ValueError("Unknown training view mode: " + mode)
+    views = [view for view in group["positive_views"] if view["grain"] == "coarse"]
+    if not views and group.get("coarse_positive") is not None:
+        views = [group["coarse_positive"]]
+    if len(views) != 1 or views[0]["grain"] != "coarse":
+        raise ValueError("Supply one supported coarse positive for each training group")
+    return views
+
+
 def positive_views(task, nodes, anchor, coarse_positive):
     facts = task["supporting_facts"]
     gold = set(zip(facts["title"], facts["sent_id"]))

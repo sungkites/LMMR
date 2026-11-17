@@ -2,8 +2,8 @@ Category,Parameter,Value
 Memory selection,B; K_e; K_a; K_s,400 tokens; 2; 2; 3
 Scoring,τ; α; β; η,2; 1.2; 1; 0.7
 Node lengths,Coarse / fine,192 / 96 reranker tokens
-Training examples,Training / development; paired positives,"1,600 / 64; 1,207 paired-positive questions"
-Control and negatives,Coarse-only control; hard negatives,381 questions; top 2 non-supporting negatives per granularity
+Training examples,Training / development; coarse-fine pairs,"1,600 / 64; 1,206 paired-positive questions"
+Controls and negatives,Coarse-only / matched coarse-only; hard negatives,"381 / 1,600 questions; top 2 non-supporting negatives per granularity"
 Loss weights,m; lambda_r; lambda_B; lambda_c,0.5; 0.5; 0.25; 0.1
 LoRA,Base model; rank / scaling,Qwen3-Reranker 0.6B; 8 / 16
 Adaptation,Projections; trainable parameters,"Attention q and v in 28 layers; 1,146,880"
@@ -16,3 +16,4 @@ Budget analysis,Procedure,192 questions; selected evidence clipped at source bou
 Answer decoding,Quantization; temperature; maximum output,Q4_K_M; 0; 128 tokens
 Prompt and execution,Full reference-prompt limit; devices,768 tokens; A100 retrieval and Orin answering
 Intervals and tests,Paired resampling; primary-test correction,"Support-source sets; 4,000 draws; Holm"
+Compression,Model; retained fraction,"LLMLingua-2, XLM-R Large; 0.75"

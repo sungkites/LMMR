@@ -14,3 +14,4 @@ outputs/
 *.gguf
 *.log
 *.sqlite*
+*.baiduyun.uploading.cfg

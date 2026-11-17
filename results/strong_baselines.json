@@ -1,0 +1,1020 @@
+{
+  "complete": true,
+  "new_predictions": 67194,
+  "questions_per_new_method": 22398,
+  "answer_model": "Qwen3.5-2B Q4_K_M",
+  "evidence_budget": 400,
+  "compressor_model": "microsoft/llmlingua-2-xlm-roberta-large-meetingbank",
+  "compressor_revision": "ebaba9b0e874dadd3003ffcff828e4397e568089",
+  "compressor_retention_rate": 0.75,
+  "results": {
+    "hotpot30": {
+      "Frozen-QE": {
+        "n": 7405,
+        "F1": 58.41502693973615,
+        "EM": 43.416610398379476,
+        "evidence_tokens": 240.91775827143823,
+        "AIC": 89.66460342593925,
+        "support_density": 33.47366719420389,
+        "support_complete": 77.86630654962863,
+        "support_paragraph_recall": 90.067521944632,
+        "gold_support_tokens": 75.35205941931127,
+        "other_tokens": 165.56569885212693
+      },
+      "MMR-Norm-a0.7": {
+        "n": 7405,
+        "F1": 58.79076042244481,
+        "EM": 43.6866981769075,
+        "evidence_tokens": 242.0457798784605,
+        "AIC": 90.3267597524111,
+        "support_density": 33.45973481530004,
+        "support_complete": 78.17690749493586,
+        "support_paragraph_recall": 90.42538825118163,
+        "gold_support_tokens": 75.65982444294396,
+        "other_tokens": 166.38595543551654
+      },
+      "Trained-Comp-v04": {
+        "n": 7405,
+        "F1": 60.035348379400915,
+        "EM": 44.713031735313976,
+        "evidence_tokens": 240.61242403781227,
+        "AIC": 92.22686051533036,
+        "support_density": 33.89516847850363,
+        "support_complete": 80.85077650236327,
+        "support_paragraph_recall": 91.53274814314652,
+        "gold_support_tokens": 76.35327481431466,
+        "other_tokens": 164.25914922349764
+      },
+      "RAMix-GC-Hier": {
+        "n": 7405,
+        "F1": 61.471919487489956,
+        "EM": 45.95543551654288,
+        "evidence_tokens": 185.32302498311952,
+        "AIC": 91.47833597236217,
+        "support_density": 43.746357981006724,
+        "support_complete": 72.99122214719785,
+        "support_paragraph_recall": 93.46387575962187,
+        "gold_support_tokens": 74.54044564483458,
+        "other_tokens": 110.78257933828495
+      },
+      "Coarse-Matched1600": {
+        "n": 7405,
+        "F1": 61.2544321718072,
+        "EM": 45.75286968264686,
+        "evidence_tokens": 242.29790681971642,
+        "AIC": 93.43601554627897,
+        "support_density": 34.26603740173152,
+        "support_complete": 83.07900067521945,
+        "support_paragraph_recall": 92.65361242403782,
+        "gold_support_tokens": 77.80027008777853,
+        "other_tokens": 164.4976367319379
+      },
+      "QE-LLMLingua2-default-r075": {
+        "n": 7405,
+        "F1": 55.90452082454847,
+        "EM": 40.20256583389602,
+        "evidence_tokens": 185.35340985820392,
+        "AIC": 82.61119907873902
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "n": 7405,
+        "F1": 58.709061825623365,
+        "EM": 42.36326806212019,
+        "evidence_tokens": 186.41931127616476,
+        "AIC": 85.9507701165971
+      }
+    },
+    "2wiki10": {
+      "Frozen-QE": {
+        "n": 12576,
+        "F1": 41.11958059161247,
+        "EM": 31.671437659033078,
+        "evidence_tokens": 242.46644402035622,
+        "AIC": 81.85444552787874,
+        "support_density": 27.905405732527598,
+        "support_complete": 58.20610687022901,
+        "support_paragraph_recall": 84.40481870229007,
+        "gold_support_tokens": 61.10822201017812,
+        "other_tokens": 181.3582220101781
+      },
+      "MMR-Norm-a0.7": {
+        "n": 12576,
+        "F1": 41.49279285188907,
+        "EM": 31.989503816793892,
+        "evidence_tokens": 243.7155693384224,
+        "AIC": 82.49268681854446,
+        "support_density": 27.881876965769155,
+        "support_complete": 58.88199745547074,
+        "support_paragraph_recall": 84.87993002544529,
+        "gold_support_tokens": 61.39249363867685,
+        "other_tokens": 182.32307569974554
+      },
+      "Trained-Comp-v04": {
+        "n": 12576,
+        "F1": 40.977064745663434,
+        "EM": 31.46469465648855,
+        "evidence_tokens": 244.10480279898218,
+        "AIC": 82.31539757113731,
+        "support_density": 28.577166181812554,
+        "support_complete": 62.229643765903305,
+        "support_paragraph_recall": 86.2078562340967,
+        "gold_support_tokens": 62.95642493638677,
+        "other_tokens": 181.14837786259542
+      },
+      "RAMix-GC-Hier": {
+        "n": 12576,
+        "F1": 43.261803635459124,
+        "EM": 32.63358778625954,
+        "evidence_tokens": 177.93805661577608,
+        "AIC": 79.95745058062228,
+        "support_density": 39.48724117486082,
+        "support_complete": 56.25795165394402,
+        "support_paragraph_recall": 86.09454516539441,
+        "gold_support_tokens": 60.68845419847328,
+        "other_tokens": 117.2496024173028
+      },
+      "Coarse-Matched1600": {
+        "n": 12576,
+        "F1": 42.707308516180746,
+        "EM": 32.81647582697201,
+        "evidence_tokens": 245.96922709923663,
+        "AIC": 84.6999379487634,
+        "support_density": 28.427759407597794,
+        "support_complete": 62.651081424936386,
+        "support_paragraph_recall": 85.34112595419847,
+        "gold_support_tokens": 63.17104007633588,
+        "other_tokens": 182.79818702290078
+      },
+      "QE-LLMLingua2-default-r075": {
+        "n": 12576,
+        "F1": 37.53732396463477,
+        "EM": 26.057569974554706,
+        "evidence_tokens": 186.38255407124683,
+        "AIC": 80.48045386047336
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "n": 12576,
+        "F1": 39.274126537119606,
+        "EM": 27.592239185750635,
+        "evidence_tokens": 189.05128816793894,
+        "AIC": 83.27275950713589
+      }
+    },
+    "musique20": {
+      "Frozen-QE": {
+        "n": 2417,
+        "F1": 26.022091879450876,
+        "EM": 17.170045510964005,
+        "evidence_tokens": 259.0144807612743,
+        "AIC": 50.22755482002482,
+        "support_density": 52.7299855448806,
+        "support_complete": 29.499379395945386,
+        "support_paragraph_recall": 61.23982898910495,
+        "gold_support_tokens": 134.773272652048,
+        "other_tokens": 124.2412081092263
+      },
+      "MMR-Norm-a0.7": {
+        "n": 2417,
+        "F1": 25.9668878712149,
+        "EM": 17.128671907323127,
+        "evidence_tokens": 259.9594538684319,
+        "AIC": 50.64129085643359,
+        "support_density": 52.98042636093989,
+        "support_complete": 29.664873810508894,
+        "support_paragraph_recall": 61.64666942490691,
+        "gold_support_tokens": 135.94662805130326,
+        "other_tokens": 124.01282581712867
+      },
+      "Trained-Comp-v04": {
+        "n": 2417,
+        "F1": 26.64761294237985,
+        "EM": 17.50103434009102,
+        "evidence_tokens": 255.13032685146877,
+        "AIC": 51.7170045510964,
+        "support_density": 54.24437565081638,
+        "support_complete": 30.16135705419942,
+        "support_paragraph_recall": 62.47414149772445,
+        "gold_support_tokens": 137.3388498138188,
+        "other_tokens": 117.79147703764998
+      },
+      "RAMix-GC-Hier": {
+        "n": 2417,
+        "F1": 30.576403045530412,
+        "EM": 20.27306578402979,
+        "evidence_tokens": 189.21017790649566,
+        "AIC": 54.32354158047166,
+        "support_density": 57.67818540568579,
+        "support_complete": 32.97476210177906,
+        "support_paragraph_recall": 64.14977244517998,
+        "gold_support_tokens": 107.70417873396772,
+        "other_tokens": 81.50599917252792
+      },
+      "Coarse-Matched1600": {
+        "n": 2417,
+        "F1": 28.498999100920514,
+        "EM": 19.073231278444354,
+        "evidence_tokens": 260.7687215556475,
+        "AIC": 55.564749689697976,
+        "support_density": 55.62618531286,
+        "support_complete": 30.781961108812578,
+        "support_paragraph_recall": 62.15349606950765,
+        "gold_support_tokens": 144.57385188249896,
+        "other_tokens": 116.19486967314853
+      },
+      "QE-LLMLingua2-default-r075": {
+        "n": 2417,
+        "F1": 26.38595938735102,
+        "EM": 16.797683078196112,
+        "evidence_tokens": 200.179147703765,
+        "AIC": 44.89035995035167
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "n": 2417,
+        "F1": 29.223196768907112,
+        "EM": 18.866363260239968,
+        "evidence_tokens": 201.3210591642532,
+        "AIC": 49.52420355812991
+      }
+    }
+  },
+  "comparisons": {
+    "hotpot30": {
+      "Coarse-Matched1600": {
+        "paired_n": 7405,
+        "methods": {
+          "Frozen-QE": {
+            "n": 7405,
+            "F1": 58.41502693973615,
+            "EM": 43.416610398379476,
+            "evidence_tokens": 240.91775827143823,
+            "AIC": 89.66460342593925,
+            "support_density": 33.47366719420389,
+            "support_complete": 77.86630654962863,
+            "support_paragraph_recall": 90.067521944632,
+            "gold_support_tokens": 75.35205941931127,
+            "other_tokens": 165.56569885212693
+          },
+          "MMR-Norm-a0.7": {
+            "n": 7405,
+            "F1": 58.79076042244481,
+            "EM": 43.6866981769075,
+            "evidence_tokens": 242.0457798784605,
+            "AIC": 90.3267597524111,
+            "support_density": 33.45973481530004,
+            "support_complete": 78.17690749493586,
+            "support_paragraph_recall": 90.42538825118163,
+            "gold_support_tokens": 75.65982444294396,
+            "other_tokens": 166.38595543551654
+          },
+          "Trained-Comp-v04": {
+            "n": 7405,
+            "F1": 60.035348379400915,
+            "EM": 44.713031735313976,
+            "evidence_tokens": 240.61242403781227,
+            "AIC": 92.22686051533036,
+            "support_density": 33.89516847850363,
+            "support_complete": 80.85077650236327,
+            "support_paragraph_recall": 91.53274814314652,
+            "gold_support_tokens": 76.35327481431466,
+            "other_tokens": 164.25914922349764
+          },
+          "RAMix-GC-Hier": {
+            "n": 7405,
+            "F1": 61.471919487489956,
+            "EM": 45.95543551654288,
+            "evidence_tokens": 185.32302498311952,
+            "AIC": 91.47833597236217,
+            "support_density": 43.746357981006724,
+            "support_complete": 72.99122214719785,
+            "support_paragraph_recall": 93.46387575962187,
+            "gold_support_tokens": 74.54044564483458,
+            "other_tokens": 110.78257933828495
+          },
+          "Coarse-Matched1600": {
+            "n": 7405,
+            "F1": 61.2544321718072,
+            "EM": 45.75286968264686,
+            "evidence_tokens": 242.29790681971642,
+            "AIC": 93.43601554627897,
+            "support_density": 34.26603740173152,
+            "support_complete": 83.07900067521945,
+            "support_paragraph_recall": 92.65361242403782,
+            "gold_support_tokens": 77.80027008777853,
+            "other_tokens": 164.4976367319379
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 0.21748731568275367,
+            "CI95": [
+              -0.31388312779132355,
+              0.7474684079435838
+            ],
+            "p_centered_bootstrap": 0.41464633841539617,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 0.2025658338960162,
+            "CI95": [
+              -0.378027174904509,
+              0.7833709317096675
+            ],
+            "p_centered_bootstrap": 0.4971257185703574,
+            "draws": 4000
+          }
+        }
+      },
+      "QE-LLMLingua2-default-r075": {
+        "paired_n": 7405,
+        "methods": {
+          "Frozen-QE": {
+            "n": 7405,
+            "F1": 58.41502693973615,
+            "EM": 43.416610398379476,
+            "evidence_tokens": 240.91775827143823,
+            "AIC": 89.66460342593925,
+            "support_density": 33.47366719420389,
+            "support_complete": 77.86630654962863,
+            "support_paragraph_recall": 90.067521944632,
+            "gold_support_tokens": 75.35205941931127,
+            "other_tokens": 165.56569885212693
+          },
+          "MMR-Norm-a0.7": {
+            "n": 7405,
+            "F1": 58.79076042244481,
+            "EM": 43.6866981769075,
+            "evidence_tokens": 242.0457798784605,
+            "AIC": 90.3267597524111,
+            "support_density": 33.45973481530004,
+            "support_complete": 78.17690749493586,
+            "support_paragraph_recall": 90.42538825118163,
+            "gold_support_tokens": 75.65982444294396,
+            "other_tokens": 166.38595543551654
+          },
+          "Trained-Comp-v04": {
+            "n": 7405,
+            "F1": 60.035348379400915,
+            "EM": 44.713031735313976,
+            "evidence_tokens": 240.61242403781227,
+            "AIC": 92.22686051533036,
+            "support_density": 33.89516847850363,
+            "support_complete": 80.85077650236327,
+            "support_paragraph_recall": 91.53274814314652,
+            "gold_support_tokens": 76.35327481431466,
+            "other_tokens": 164.25914922349764
+          },
+          "RAMix-GC-Hier": {
+            "n": 7405,
+            "F1": 61.471919487489956,
+            "EM": 45.95543551654288,
+            "evidence_tokens": 185.32302498311952,
+            "AIC": 91.47833597236217,
+            "support_density": 43.746357981006724,
+            "support_complete": 72.99122214719785,
+            "support_paragraph_recall": 93.46387575962187,
+            "gold_support_tokens": 74.54044564483458,
+            "other_tokens": 110.78257933828495
+          },
+          "QE-LLMLingua2-default-r075": {
+            "n": 7405,
+            "F1": 55.90452082454847,
+            "EM": 40.20256583389602,
+            "evidence_tokens": 185.35340985820392,
+            "AIC": 82.61119907873902
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 5.567398662941488,
+            "CI95": [
+              4.771223678800171,
+              6.396591473526423
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 5.75286968264686,
+            "CI95": [
+              4.850673235352756,
+              6.647757771073418
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          }
+        }
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "paired_n": 7405,
+        "methods": {
+          "Frozen-QE": {
+            "n": 7405,
+            "F1": 58.41502693973615,
+            "EM": 43.416610398379476,
+            "evidence_tokens": 240.91775827143823,
+            "AIC": 89.66460342593925,
+            "support_density": 33.47366719420389,
+            "support_complete": 77.86630654962863,
+            "support_paragraph_recall": 90.067521944632,
+            "gold_support_tokens": 75.35205941931127,
+            "other_tokens": 165.56569885212693
+          },
+          "MMR-Norm-a0.7": {
+            "n": 7405,
+            "F1": 58.79076042244481,
+            "EM": 43.6866981769075,
+            "evidence_tokens": 242.0457798784605,
+            "AIC": 90.3267597524111,
+            "support_density": 33.45973481530004,
+            "support_complete": 78.17690749493586,
+            "support_paragraph_recall": 90.42538825118163,
+            "gold_support_tokens": 75.65982444294396,
+            "other_tokens": 166.38595543551654
+          },
+          "Trained-Comp-v04": {
+            "n": 7405,
+            "F1": 60.035348379400915,
+            "EM": 44.713031735313976,
+            "evidence_tokens": 240.61242403781227,
+            "AIC": 92.22686051533036,
+            "support_density": 33.89516847850363,
+            "support_complete": 80.85077650236327,
+            "support_paragraph_recall": 91.53274814314652,
+            "gold_support_tokens": 76.35327481431466,
+            "other_tokens": 164.25914922349764
+          },
+          "RAMix-GC-Hier": {
+            "n": 7405,
+            "F1": 61.471919487489956,
+            "EM": 45.95543551654288,
+            "evidence_tokens": 185.32302498311952,
+            "AIC": 91.47833597236217,
+            "support_density": 43.746357981006724,
+            "support_complete": 72.99122214719785,
+            "support_paragraph_recall": 93.46387575962187,
+            "gold_support_tokens": 74.54044564483458,
+            "other_tokens": 110.78257933828495
+          },
+          "Coarse1600-LLMLingua2-default-r075": {
+            "n": 7405,
+            "F1": 58.709061825623365,
+            "EM": 42.36326806212019,
+            "evidence_tokens": 186.41931127616476,
+            "AIC": 85.9507701165971
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 2.762857661866594,
+            "CI95": [
+              2.05155886650778,
+              3.446962092104558
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 7405,
+            "clusters": 7311,
+            "delta": 3.5921674544226874,
+            "CI95": [
+              2.7635481261795634,
+              4.447170151340889
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          }
+        }
+      }
+    },
+    "2wiki10": {
+      "Coarse-Matched1600": {
+        "paired_n": 12576,
+        "methods": {
+          "Frozen-QE": {
+            "n": 12576,
+            "F1": 41.11958059161247,
+            "EM": 31.671437659033078,
+            "evidence_tokens": 242.46644402035622,
+            "AIC": 81.85444552787874,
+            "support_density": 27.905405732527598,
+            "support_complete": 58.20610687022901,
+            "support_paragraph_recall": 84.40481870229007,
+            "gold_support_tokens": 61.10822201017812,
+            "other_tokens": 181.3582220101781
+          },
+          "MMR-Norm-a0.7": {
+            "n": 12576,
+            "F1": 41.49279285188907,
+            "EM": 31.989503816793892,
+            "evidence_tokens": 243.7155693384224,
+            "AIC": 82.49268681854446,
+            "support_density": 27.881876965769155,
+            "support_complete": 58.88199745547074,
+            "support_paragraph_recall": 84.87993002544529,
+            "gold_support_tokens": 61.39249363867685,
+            "other_tokens": 182.32307569974554
+          },
+          "Trained-Comp-v04": {
+            "n": 12576,
+            "F1": 40.977064745663434,
+            "EM": 31.46469465648855,
+            "evidence_tokens": 244.10480279898218,
+            "AIC": 82.31539757113731,
+            "support_density": 28.577166181812554,
+            "support_complete": 62.229643765903305,
+            "support_paragraph_recall": 86.2078562340967,
+            "gold_support_tokens": 62.95642493638677,
+            "other_tokens": 181.14837786259542
+          },
+          "RAMix-GC-Hier": {
+            "n": 12576,
+            "F1": 43.261803635459124,
+            "EM": 32.63358778625954,
+            "evidence_tokens": 177.93805661577608,
+            "AIC": 79.95745058062228,
+            "support_density": 39.48724117486082,
+            "support_complete": 56.25795165394402,
+            "support_paragraph_recall": 86.09454516539441,
+            "gold_support_tokens": 60.68845419847328,
+            "other_tokens": 117.2496024173028
+          },
+          "Coarse-Matched1600": {
+            "n": 12576,
+            "F1": 42.707308516180746,
+            "EM": 32.81647582697201,
+            "evidence_tokens": 245.96922709923663,
+            "AIC": 84.6999379487634,
+            "support_density": 28.427759407597794,
+            "support_complete": 62.651081424936386,
+            "support_paragraph_recall": 85.34112595419847,
+            "gold_support_tokens": 63.17104007633588,
+            "other_tokens": 182.79818702290078
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": 0.5544951192783717,
+            "CI95": [
+              0.04620036420043601,
+              1.076244865159366
+            ],
+            "p_centered_bootstrap": 0.036740814796300925,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": -0.1828880407124682,
+            "CI95": [
+              -0.7467652019925276,
+              0.3664469976807578
+            ],
+            "p_centered_bootstrap": 0.519870032491877,
+            "draws": 4000
+          }
+        }
+      },
+      "QE-LLMLingua2-default-r075": {
+        "paired_n": 12576,
+        "methods": {
+          "Frozen-QE": {
+            "n": 12576,
+            "F1": 41.11958059161247,
+            "EM": 31.671437659033078,
+            "evidence_tokens": 242.46644402035622,
+            "AIC": 81.85444552787874,
+            "support_density": 27.905405732527598,
+            "support_complete": 58.20610687022901,
+            "support_paragraph_recall": 84.40481870229007,
+            "gold_support_tokens": 61.10822201017812,
+            "other_tokens": 181.3582220101781
+          },
+          "MMR-Norm-a0.7": {
+            "n": 12576,
+            "F1": 41.49279285188907,
+            "EM": 31.989503816793892,
+            "evidence_tokens": 243.7155693384224,
+            "AIC": 82.49268681854446,
+            "support_density": 27.881876965769155,
+            "support_complete": 58.88199745547074,
+            "support_paragraph_recall": 84.87993002544529,
+            "gold_support_tokens": 61.39249363867685,
+            "other_tokens": 182.32307569974554
+          },
+          "Trained-Comp-v04": {
+            "n": 12576,
+            "F1": 40.977064745663434,
+            "EM": 31.46469465648855,
+            "evidence_tokens": 244.10480279898218,
+            "AIC": 82.31539757113731,
+            "support_density": 28.577166181812554,
+            "support_complete": 62.229643765903305,
+            "support_paragraph_recall": 86.2078562340967,
+            "gold_support_tokens": 62.95642493638677,
+            "other_tokens": 181.14837786259542
+          },
+          "RAMix-GC-Hier": {
+            "n": 12576,
+            "F1": 43.261803635459124,
+            "EM": 32.63358778625954,
+            "evidence_tokens": 177.93805661577608,
+            "AIC": 79.95745058062228,
+            "support_density": 39.48724117486082,
+            "support_complete": 56.25795165394402,
+            "support_paragraph_recall": 86.09454516539441,
+            "gold_support_tokens": 60.68845419847328,
+            "other_tokens": 117.2496024173028
+          },
+          "QE-LLMLingua2-default-r075": {
+            "n": 12576,
+            "F1": 37.53732396463477,
+            "EM": 26.057569974554706,
+            "evidence_tokens": 186.38255407124683,
+            "AIC": 80.48045386047336
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": 5.7244796708243495,
+            "CI95": [
+              5.039173913723992,
+              6.424633015616291
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": 6.576017811704834,
+            "CI95": [
+              5.8345753508846805,
+              7.332591060919357
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          }
+        }
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "paired_n": 12576,
+        "methods": {
+          "Frozen-QE": {
+            "n": 12576,
+            "F1": 41.11958059161247,
+            "EM": 31.671437659033078,
+            "evidence_tokens": 242.46644402035622,
+            "AIC": 81.85444552787874,
+            "support_density": 27.905405732527598,
+            "support_complete": 58.20610687022901,
+            "support_paragraph_recall": 84.40481870229007,
+            "gold_support_tokens": 61.10822201017812,
+            "other_tokens": 181.3582220101781
+          },
+          "MMR-Norm-a0.7": {
+            "n": 12576,
+            "F1": 41.49279285188907,
+            "EM": 31.989503816793892,
+            "evidence_tokens": 243.7155693384224,
+            "AIC": 82.49268681854446,
+            "support_density": 27.881876965769155,
+            "support_complete": 58.88199745547074,
+            "support_paragraph_recall": 84.87993002544529,
+            "gold_support_tokens": 61.39249363867685,
+            "other_tokens": 182.32307569974554
+          },
+          "Trained-Comp-v04": {
+            "n": 12576,
+            "F1": 40.977064745663434,
+            "EM": 31.46469465648855,
+            "evidence_tokens": 244.10480279898218,
+            "AIC": 82.31539757113731,
+            "support_density": 28.577166181812554,
+            "support_complete": 62.229643765903305,
+            "support_paragraph_recall": 86.2078562340967,
+            "gold_support_tokens": 62.95642493638677,
+            "other_tokens": 181.14837786259542
+          },
+          "RAMix-GC-Hier": {
+            "n": 12576,
+            "F1": 43.261803635459124,
+            "EM": 32.63358778625954,
+            "evidence_tokens": 177.93805661577608,
+            "AIC": 79.95745058062228,
+            "support_density": 39.48724117486082,
+            "support_complete": 56.25795165394402,
+            "support_paragraph_recall": 86.09454516539441,
+            "gold_support_tokens": 60.68845419847328,
+            "other_tokens": 117.2496024173028
+          },
+          "Coarse1600-LLMLingua2-default-r075": {
+            "n": 12576,
+            "F1": 39.274126537119606,
+            "EM": 27.592239185750635,
+            "evidence_tokens": 189.05128816793894,
+            "AIC": 83.27275950713589
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": 3.9876770983395162,
+            "CI95": [
+              3.3352381717428146,
+              4.605410987486883
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 12576,
+            "clusters": 11920,
+            "delta": 5.041348600508906,
+            "CI95": [
+              4.332662559717786,
+              5.71547232311791
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          }
+        }
+      }
+    },
+    "musique20": {
+      "Coarse-Matched1600": {
+        "paired_n": 2417,
+        "methods": {
+          "Frozen-QE": {
+            "n": 2417,
+            "F1": 26.022091879450876,
+            "EM": 17.170045510964005,
+            "evidence_tokens": 259.0144807612743,
+            "AIC": 50.22755482002482,
+            "support_density": 52.7299855448806,
+            "support_complete": 29.499379395945386,
+            "support_paragraph_recall": 61.23982898910495,
+            "gold_support_tokens": 134.773272652048,
+            "other_tokens": 124.2412081092263
+          },
+          "MMR-Norm-a0.7": {
+            "n": 2417,
+            "F1": 25.9668878712149,
+            "EM": 17.128671907323127,
+            "evidence_tokens": 259.9594538684319,
+            "AIC": 50.64129085643359,
+            "support_density": 52.98042636093989,
+            "support_complete": 29.664873810508894,
+            "support_paragraph_recall": 61.64666942490691,
+            "gold_support_tokens": 135.94662805130326,
+            "other_tokens": 124.01282581712867
+          },
+          "Trained-Comp-v04": {
+            "n": 2417,
+            "F1": 26.64761294237985,
+            "EM": 17.50103434009102,
+            "evidence_tokens": 255.13032685146877,
+            "AIC": 51.7170045510964,
+            "support_density": 54.24437565081638,
+            "support_complete": 30.16135705419942,
+            "support_paragraph_recall": 62.47414149772445,
+            "gold_support_tokens": 137.3388498138188,
+            "other_tokens": 117.79147703764998
+          },
+          "RAMix-GC-Hier": {
+            "n": 2417,
+            "F1": 30.576403045530412,
+            "EM": 20.27306578402979,
+            "evidence_tokens": 189.21017790649566,
+            "AIC": 54.32354158047166,
+            "support_density": 57.67818540568579,
+            "support_complete": 32.97476210177906,
+            "support_paragraph_recall": 64.14977244517998,
+            "gold_support_tokens": 107.70417873396772,
+            "other_tokens": 81.50599917252792
+          },
+          "Coarse-Matched1600": {
+            "n": 2417,
+            "F1": 28.498999100920514,
+            "EM": 19.073231278444354,
+            "evidence_tokens": 260.7687215556475,
+            "AIC": 55.564749689697976,
+            "support_density": 55.62618531286,
+            "support_complete": 30.781961108812578,
+            "support_paragraph_recall": 62.15349606950765,
+            "gold_support_tokens": 144.57385188249896,
+            "other_tokens": 116.19486967314853
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 2.0774039446099013,
+            "CI95": [
+              0.9044293411046486,
+              3.224501122753121
+            ],
+            "p_centered_bootstrap": 0.0012496875781054736,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 1.1998345055854365,
+            "CI95": [
+              0.04185808035784655,
+              2.3519655277550657
+            ],
+            "p_centered_bootstrap": 0.0424893776555861,
+            "draws": 4000
+          }
+        }
+      },
+      "QE-LLMLingua2-default-r075": {
+        "paired_n": 2417,
+        "methods": {
+          "Frozen-QE": {
+            "n": 2417,
+            "F1": 26.022091879450876,
+            "EM": 17.170045510964005,
+            "evidence_tokens": 259.0144807612743,
+            "AIC": 50.22755482002482,
+            "support_density": 52.7299855448806,
+            "support_complete": 29.499379395945386,
+            "support_paragraph_recall": 61.23982898910495,
+            "gold_support_tokens": 134.773272652048,
+            "other_tokens": 124.2412081092263
+          },
+          "MMR-Norm-a0.7": {
+            "n": 2417,
+            "F1": 25.9668878712149,
+            "EM": 17.128671907323127,
+            "evidence_tokens": 259.9594538684319,
+            "AIC": 50.64129085643359,
+            "support_density": 52.98042636093989,
+            "support_complete": 29.664873810508894,
+            "support_paragraph_recall": 61.64666942490691,
+            "gold_support_tokens": 135.94662805130326,
+            "other_tokens": 124.01282581712867
+          },
+          "Trained-Comp-v04": {
+            "n": 2417,
+            "F1": 26.64761294237985,
+            "EM": 17.50103434009102,
+            "evidence_tokens": 255.13032685146877,
+            "AIC": 51.7170045510964,
+            "support_density": 54.24437565081638,
+            "support_complete": 30.16135705419942,
+            "support_paragraph_recall": 62.47414149772445,
+            "gold_support_tokens": 137.3388498138188,
+            "other_tokens": 117.79147703764998
+          },
+          "RAMix-GC-Hier": {
+            "n": 2417,
+            "F1": 30.576403045530412,
+            "EM": 20.27306578402979,
+            "evidence_tokens": 189.21017790649566,
+            "AIC": 54.32354158047166,
+            "support_density": 57.67818540568579,
+            "support_complete": 32.97476210177906,
+            "support_paragraph_recall": 64.14977244517998,
+            "gold_support_tokens": 107.70417873396772,
+            "other_tokens": 81.50599917252792
+          },
+          "QE-LLMLingua2-default-r075": {
+            "n": 2417,
+            "F1": 26.38595938735102,
+            "EM": 16.797683078196112,
+            "evidence_tokens": 200.179147703765,
+            "AIC": 44.89035995035167
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 4.190443658179394,
+            "CI95": [
+              2.797691356279607,
+              5.635907715422798
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 3.475382705833678,
+            "CI95": [
+              2.059822248245253,
+              4.906464196154918
+            ],
+            "p_centered_bootstrap": 0.00024993751562109475,
+            "draws": 4000
+          }
+        }
+      },
+      "Coarse1600-LLMLingua2-default-r075": {
+        "paired_n": 2417,
+        "methods": {
+          "Frozen-QE": {
+            "n": 2417,
+            "F1": 26.022091879450876,
+            "EM": 17.170045510964005,
+            "evidence_tokens": 259.0144807612743,
+            "AIC": 50.22755482002482,
+            "support_density": 52.7299855448806,
+            "support_complete": 29.499379395945386,
+            "support_paragraph_recall": 61.23982898910495,
+            "gold_support_tokens": 134.773272652048,
+            "other_tokens": 124.2412081092263
+          },
+          "MMR-Norm-a0.7": {
+            "n": 2417,
+            "F1": 25.9668878712149,
+            "EM": 17.128671907323127,
+            "evidence_tokens": 259.9594538684319,
+            "AIC": 50.64129085643359,
+            "support_density": 52.98042636093989,
+            "support_complete": 29.664873810508894,
+            "support_paragraph_recall": 61.64666942490691,
+            "gold_support_tokens": 135.94662805130326,
+            "other_tokens": 124.01282581712867
+          },
+          "Trained-Comp-v04": {
+            "n": 2417,
+            "F1": 26.64761294237985,
+            "EM": 17.50103434009102,
+            "evidence_tokens": 255.13032685146877,
+            "AIC": 51.7170045510964,
+            "support_density": 54.24437565081638,
+            "support_complete": 30.16135705419942,
+            "support_paragraph_recall": 62.47414149772445,
+            "gold_support_tokens": 137.3388498138188,
+            "other_tokens": 117.79147703764998
+          },
+          "RAMix-GC-Hier": {
+            "n": 2417,
+            "F1": 30.576403045530412,
+            "EM": 20.27306578402979,
+            "evidence_tokens": 189.21017790649566,
+            "AIC": 54.32354158047166,
+            "support_density": 57.67818540568579,
+            "support_complete": 32.97476210177906,
+            "support_paragraph_recall": 64.14977244517998,
+            "gold_support_tokens": 107.70417873396772,
+            "other_tokens": 81.50599917252792
+          },
+          "Coarse1600-LLMLingua2-default-r075": {
+            "n": 2417,
+            "F1": 29.223196768907112,
+            "EM": 18.866363260239968,
+            "evidence_tokens": 201.3210591642532,
+            "AIC": 49.52420355812991
+          }
+        },
+        "effects": {
+          "F1": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 1.3532062766232997,
+            "CI95": [
+              0.03647296966826952,
+              2.6574477086721617
+            ],
+            "p_centered_bootstrap": 0.04323919020244939,
+            "draws": 4000
+          },
+          "EM": {
+            "n": 2417,
+            "clusters": 2201,
+            "delta": 1.406702523789822,
+            "CI95": [
+              0.08391818124132544,
+              2.7127561638332653
+            ],
+            "p_centered_bootstrap": 0.03899025243689078,
+            "draws": 4000
+          }
+        }
+      }
+    }
+  },
+  "Holm_family": 21
+}

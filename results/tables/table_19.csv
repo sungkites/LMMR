@@ -1,0 +1,11 @@
+Component,Instruction or input
+Relevance instruction,"Given a question, retrieve relevant passages that answer the question."
+Conditional instruction,"Given the question and the known evidence, retrieve a different passage that supplies the missing information needed to answer the question. Prefer complementary evidence over repetition of the known evidence."
+Conditional fields,"<Query>: {question}
+Known evidence: {anchor}
+<Document>: {candidate}
+Decision tokens: yes / no."
+Answer instruction,"Answer using only the supplied evidence. Return a concise direct answer without explanation. If the evidence is insufficient, say ""not enough information""."
+Answer fields,"Evidence: {selected evidence}
+Question: {question}
+Answer:"

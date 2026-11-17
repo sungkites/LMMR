@@ -13,7 +13,8 @@
   "training": {
     "questions": 1600,
     "development": 64,
-    "paired_positive_questions": 1207,
+    "paired_positive_questions": 1206,
+    "fine_positive_questions": 1207,
     "steps": 600,
     "questions_per_step": 4,
     "learning_rate": 5e-05,
@@ -30,5 +31,19 @@
     "temperature": 0,
     "max_tokens": 128,
     "quantization": "Q4_K_M"
+  },
+  "matched_coarse_training": {
+    "questions": 1600,
+    "steps": 600,
+    "questions_per_step": 4,
+    "positive_views": "coarse only; explicit same-source supported view for a boundary-crossing group",
+    "selection": "same two-anchor objective restricted to coarse nodes"
+  },
+  "learned_compression": {
+    "model": "microsoft/llmlingua-2-xlm-roberta-large-meetingbank",
+    "revision": "ebaba9b0e874dadd3003ffcff828e4397e568089",
+    "retention_rate": 0.75,
+    "force_tokens": [],
+    "context_filtering": false
   }
 }

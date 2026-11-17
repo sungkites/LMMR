@@ -22,15 +22,21 @@ def retrieve():
     parser.add_argument('--model', default='Qwen/Qwen3-Reranker-0.6B')
     parser.add_argument('--adapter', help='Trained native q/v LoRA checkpoint for LMMR')
     parser.add_argument('--answer-tokenizer', required=True, help='Reference answer-model tokenizer directory or HF ID')
-    parser.add_argument('--mode', choices=['lmmr', 'qe', 'mmr', 'frozen_hierarchy', 'frozen_conditional'], default='lmmr')
+    parser.add_argument('--mode', choices=['lmmr', 'qe', 'mmr', 'frozen_hierarchy', 'frozen_conditional',
+                                         'coarse_matched', 'qe_compressed', 'coarse_matched_compressed'], default='lmmr')
+    parser.add_argument('--compression-rate', type=float, default=.75)
+    parser.add_argument('--compressor-model', default='microsoft/llmlingua-2-xlm-roberta-large-meetingbank')
     parser.add_argument('--budget', type=int, default=400)
     parser.add_argument('--prompt-limit', type=int, default=768)
     parser.add_argument('--device')
     parser.add_argument('--output', required=True)
     args = parser.parse_args()
-    if args.mode == 'lmmr' and not args.adapter:
-        parser.error('LMMR requires --adapter; use a frozen mode to run the base model')
-    if args.mode != 'lmmr' and args.adapter:
+    compressed = args.mode.endswith('_compressed')
+    mode = args.mode[:-len('_compressed')] if compressed else args.mode
+    learned = mode in {'lmmr', 'coarse_matched'}
+    if learned and not args.adapter:
+        parser.error('Learned retrieval requires --adapter; use a frozen mode to run the base model')
+    if not learned and args.adapter:
         parser.error('Frozen modes must not receive an adapted checkpoint')
     from transformers import AutoTokenizer
     task = read_json(args.task)
@@ -47,15 +53,24 @@ def retrieve():
         prompt = reference.apply_chat_template(answer_messages(task['question'], evidence),
             tokenize=False, add_generation_prompt=True, enable_thinking=False)
         return count(prompt) <= args.prompt_limit
-    conditional = args.mode in {'lmmr', 'frozen_conditional'}
+    conditional = mode in {'lmmr', 'frozen_conditional', 'coarse_matched'}
     def score(anchor, candidates):
         return scorer.score(task['question'], candidates, anchor['text'], conditional)
     selected = select_memory(task, nodes, relevance, score, count,
-        RetrievalConfig(budget=args.budget), args.mode, fits)
+        RetrievalConfig(budget=args.budget), mode, fits)
     evidence = merge(task, selected)
-    write_json(args.output, {'task_id': task['id'], 'mode': args.mode, 'selected': selected,
+    result = {'task_id': task['id'], 'mode': args.mode, 'selected': selected,
         'evidence': evidence, 'evidence_tokens': count(evidence),
-        'messages': answer_messages(task['question'], evidence)})
+        'messages': answer_messages(task['question'], evidence)}
+    if compressed:
+        from .compression import LLMLingua2Compressor
+        compressor = LLMLingua2Compressor(args.compressor_model, scorer.device)
+        output = compressor.compress(evidence, count, args.budget, args.compression_rate, fits)
+        result['source_selection'] = result.pop('selected')
+        result['uncompressed_evidence_tokens'] = result['evidence_tokens']
+        result.update(output)
+        result['messages'] = answer_messages(task['question'], output['evidence'])
+    write_json(args.output, result)
 
 
 def evaluate():
@@ -73,7 +88,7 @@ def evaluate():
 
 def train():
     from .scoring import QwenScorer
-    from .training import conditional_loss
+    from .training import conditional_loss, training_views
     import random
     import torch
     parser = argparse.ArgumentParser(description='Train q/v adapters on prepared source-equivalent memory groups')
@@ -83,11 +98,17 @@ def train():
     parser.add_argument('--steps', type=int, default=600)
     parser.add_argument('--questions-per-step', type=int, default=4)
     parser.add_argument('--learning-rate', type=float, default=5e-5)
+    parser.add_argument('--views', choices=['paired', 'coarse'], default='paired')
     parser.add_argument('--device')
     args = parser.parse_args()
     rows = [json.loads(line) for line in Path(args.groups).read_text(encoding='utf-8').splitlines() if line.strip()]
     if not rows:
         parser.error('Empty training groups')
+    torch.manual_seed(20261113)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(20261113)
+    for row in rows:
+        training_views(row, args.views)
     scorer = QwenScorer(args.model, device=args.device, trainable=True)
     optimizer = torch.optim.AdamW(scorer.adapter_parameters(), lr=args.learning_rate, weight_decay=.01)
     order = list(range(len(rows)))
@@ -99,14 +120,15 @@ def train():
         for j in range(args.questions_per_step):
             row = rows[order[(step * args.questions_per_step + j) % len(order)]]
             records = []
-            for view in row['positive_views']:
+            views = training_views(row, args.views)
+            for view in views:
                 grain = view['grain']
                 negatives = row['hard_by_grain'].get(grain) or row['hard_by_grain']['coarse']
                 negative = negatives[step % len(negatives)]
                 redundant = row['red_views'].get(grain, row['anchor'])
                 records.extend((row['question'], n['text'], row['anchor']['text'], True)
                                for n in (view, negative, redundant))
-            values = scorer.forward(records).reshape(len(row['positive_views']), 3)
+            values = scorer.forward(records).reshape(len(views), 3)
             loss = conditional_loss(values) / args.questions_per_step
             if not torch.isfinite(loss):
                 raise ValueError('Non-finite training loss')

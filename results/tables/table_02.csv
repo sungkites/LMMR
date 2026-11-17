@@ -4,4 +4,5 @@ Frozen conditional hierarchy,57.90,42.92,65.91,42.13,183.22
 Coarse-only adaptation,60.04,44.71,80.85,33.90,240.61
 Without score smoothing,61.49,45.86,73.09,43.76,185.16
 Without redundant negatives,61.23,45.66,72.90,43.78,185.54
+Matched coarse-only,61.25,45.75,83.08,34.27,242.30
 LMMR,61.47,45.96,72.99,43.75,185.32

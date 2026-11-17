@@ -9,7 +9,7 @@ authors:
     given-names: Yunkai
   - family-names: Shi
     given-names: Liye
-version: 0.1.0
-date-released: 2026-11-16
+version: 0.2.0
+date-released: 2026-11-17
 repository-code: "https://github.com/sungkites/LMMR"
 license: MIT

@@ -59,7 +59,7 @@ def select_memory(task, nodes, relevance_scores, score_candidates, count_tokens,
             raise ValueError("The leading anchor exceeds the reference budget")
         return [first]
 
-    if mode not in {"lmmr", "frozen_hierarchy", "frozen_conditional"}:
+    if mode not in {"lmmr", "frozen_hierarchy", "frozen_conditional", "coarse_matched"}:
         raise ValueError("Unknown retrieval mode: " + mode)
     anchors = coarse[:cfg.max_anchors]
     if len(anchors) > 1 and relevance_scores[anchors[0]["id"]] - relevance_scores[anchors[1]["id"]] > cfg.anchor_gap:
@@ -77,8 +77,9 @@ def select_memory(task, nodes, relevance_scores, score_candidates, count_tokens,
                 sources.append(node["paragraph"])
             if len(sources) == cfg.source_expansion:
                 break
-        fine = [n for n in nodes if n["grain"] == "fine"
-                and n["paragraph"] in sources and not contains(anchor, n)]
+        fine = [] if mode == "coarse_matched" else [
+            n for n in nodes if n["grain"] == "fine"
+            and n["paragraph"] in sources and not contains(anchor, n)]
         fine_scores = list(score_candidates(anchor, fine)) if fine else []
         if len(fine_scores) != len(fine):
             raise ValueError("Fine candidate and score counts differ")

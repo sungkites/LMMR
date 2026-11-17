@@ -2,7 +2,7 @@ import unittest
 from lmmr.memory import intervals, contains, merge, build_nodes
 from lmmr.metrics import score_answer, evaluate_rows
 from lmmr.retrieval import select_memory, RetrievalConfig
-from lmmr.training import positive_views, select_hard_negatives
+from lmmr.training import positive_views, select_hard_negatives, training_views
 
 
 class WordTokenizer:
@@ -66,6 +66,46 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(seen, [4, 4])
         self.assertEqual([len(v) for v in negatives.values()], [2, 2])
         self.assertTrue(all(n['title'] not in {'0', '1'} for ns in negatives.values() for n in ns))
+
+    def test_matched_coarse_control_never_uses_a_fine_candidate(self):
+        task = {'paragraphs': [{'title': 'A', 'sentences': ['a']},
+                               {'title': 'B', 'sentences': ['b ' * 20]}]}
+        anchor = node(0, 0, 1, text='a')
+        coarse = node(1, 0, 39, text='b ' * 20)
+        fine = node(1, 0, 1, 'fine', 'b')
+        seen = []
+        def score(a, candidates):
+            seen.extend(n['grain'] for n in candidates)
+            return [5.] * len(candidates)
+        selected = select_memory(task, [anchor, coarse, fine],
+            {anchor['id']: 10., coarse['id']: 1.}, score,
+            lambda text: len(text.split()), RetrievalConfig(budget=8), mode='coarse_matched')
+        self.assertEqual(selected, [anchor])
+        self.assertTrue(seen)
+        self.assertNotIn('fine', seen)
+
+    def test_matched_coarse_retains_the_two_anchor_search(self):
+        task = {'paragraphs': [{'title': str(i), 'sentences': [word]}
+                               for i, word in enumerate(['alpha', 'beta', 'gamma'])]}
+        a, b, c = [node(i, 0, len(word), text=word)
+                   for i, word in enumerate(['alpha', 'beta', 'gamma'])]
+        def score(anchor, candidates):
+            return [5. if anchor['id'] == b['id'] and n['id'] == c['id'] else 0.
+                    for n in candidates]
+        selected = select_memory(task, [a, b, c],
+            {a['id']: 10., b['id']: 9.5, c['id']: 0.}, score,
+            lambda text: len(text.split()), mode='coarse_matched')
+        self.assertEqual([n['id'] for n in selected], [b['id'], c['id']])
+
+    def test_coarse_training_requires_an_explicit_supported_view(self):
+        fine = node(1, 0, 4, 'fine')
+        coarse = node(1, 0, 8)
+        group = {'positive_views': [fine]}
+        with self.assertRaises(ValueError):
+            training_views(group, 'coarse')
+        group['coarse_positive'] = coarse
+        self.assertEqual(training_views(group, 'coarse'), [coarse])
+        self.assertEqual(training_views(group), [fine])
 
     def test_official_boolean_and_alias_scoring(self):
         self.assertEqual(score_answer('Yes, both did.', 'yes')['f1'], 0.)

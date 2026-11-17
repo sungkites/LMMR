@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lmmr"
-version = "0.1.0"
+version = "0.2.0"
 description = "Source-consistent multigranular memory retrieval for small language model agents"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -13,6 +13,7 @@ dependencies = []
 
 [project.optional-dependencies]
 model = ["torch>=2.4", "transformers>=4.51,<5", "tokenizers>=0.21", "safetensors>=0.4"]
+compression = ["llmlingua==0.2.2", "accelerate>=0.33", "sentencepiece>=0.2"]
 
 [project.scripts]
 lmmr-retrieve = "lmmr.cli:retrieve"

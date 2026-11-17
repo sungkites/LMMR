@@ -41,12 +41,15 @@
       "lmmr_tokens": 189.21
     }
   ],
-  "tables": "tables/table_01.csv through table_18.csv",
+  "tables": "tables/table_01.csv through table_20.csv",
   "rounding": "Gains are rounded from unrounded paired aggregates; they may differ from subtracting displayed scores.",
   "published_reference_tables": [
     16,
     17,
     18
   ],
-  "published_reference_scope": "External literature rows retain their original model sizes, sample counts, and retrieval settings."
+  "published_reference_scope": "External literature rows retain their original model sizes, sample counts, and retrieval settings.",
+  "strong_baselines": "strong_baselines.json",
+  "new_baseline_conditions": 67194,
+  "primary_F1_comparisons": 21
 }
