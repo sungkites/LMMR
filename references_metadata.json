@@ -1,0 +1,654 @@
+{
+  "verified_on": "2026-11-17",
+  "references": [
+    {
+      "key": "ref1",
+      "kind": "misc",
+      "fields": {
+        "author": "Park, Joon Sung and O'Brien, Joseph C. and Cai, Carrie J. and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.",
+        "title": "{Generative Agents: Interactive Simulacra of Human Behavior}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2304.03442",
+        "eprint": "2304.03442",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2304.03442"
+      }
+    },
+    {
+      "key": "ref2",
+      "kind": "misc",
+      "fields": {
+        "author": "Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan",
+        "title": "{ReAct: Synergizing Reasoning and Acting in Language Models}",
+        "year": "2022",
+        "doi": "10.48550/arXiv.2210.03629",
+        "eprint": "2210.03629",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    },
+    {
+      "key": "ref3",
+      "kind": "misc",
+      "fields": {
+        "author": "Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu",
+        "title": "{Reflexion: Language Agents with Verbal Reinforcement Learning}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2303.11366",
+        "eprint": "2303.11366",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2303.11366"
+      }
+    },
+    {
+      "key": "ref4",
+      "kind": "misc",
+      "fields": {
+        "author": "Zhong, Wanjun and Guo, Lianghong and Gao, Qiqi and Ye, He and Wang, Yanlin",
+        "title": "{MemoryBank: Enhancing Large Language Models with Long-Term Memory}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2305.10250",
+        "eprint": "2305.10250",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2305.10250"
+      }
+    },
+    {
+      "key": "ref5",
+      "kind": "misc",
+      "fields": {
+        "author": "Packer, Charles and Wooders, Sarah and Lin, Kevin and Fang, Vivian and Patil, Shishir G. and Stoica, Ion and Gonzalez, Joseph E.",
+        "title": "{MemGPT: Towards LLMs as Operating Systems}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2310.08560",
+        "eprint": "2310.08560",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08560"
+      }
+    },
+    {
+      "key": "ref6",
+      "kind": "misc",
+      "fields": {
+        "author": "Xu, Wujiang and Liang, Zujie and Mei, Kai and Gao, Hang and Tan, Juntao and Zhang, Yongfeng",
+        "title": "{A-MEM: Agentic Memory for LLM Agents}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2502.12110",
+        "eprint": "2502.12110",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2502.12110"
+      }
+    },
+    {
+      "key": "ref7",
+      "kind": "misc",
+      "fields": {
+        "author": "Chhikara, Prateek and Khant, Dev and Aryan, Saket and Singh, Taranjeet and Yadav, Deshraj",
+        "title": "{Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2504.19413",
+        "eprint": "2504.19413",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2504.19413"
+      }
+    },
+    {
+      "key": "ref8",
+      "kind": "misc",
+      "fields": {
+        "author": "Liu, Nelson F. and Lin, Kevin and Hewitt, John and Paranjape, Ashwin and Bevilacqua, Michele and Petroni, Fabio and Liang, Percy",
+        "title": "{Lost in the Middle: How Language Models Use Long Contexts}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2307.03172",
+        "eprint": "2307.03172",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2307.03172"
+      }
+    },
+    {
+      "key": "ref9",
+      "kind": "misc",
+      "fields": {
+        "author": "Bai, Yushi and Lv, Xin and Zhang, Jiajie and Lyu, Hongchang and Tang, Jiankai and Huang, Zhidian and Du, Zhengxiao and Liu, Xiao and Zeng, Aohan and Hou, Lei and Dong, Yuxiao and Tang, Jie and Li, Juanzi",
+        "title": "{LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding}",
+        "year": "2023",
+        "doi": "10.48550/arXiv.2308.14508",
+        "eprint": "2308.14508",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2308.14508"
+      }
+    },
+    {
+      "key": "ref11",
+      "kind": "misc",
+      "fields": {
+        "author": "Hsieh, Cheng-Ping and Sun, Simeng and Kriman, Samuel and Acharya, Shantanu and Rekesh, Dima and Jia, Fei and Zhang, Yang and Ginsburg, Boris",
+        "title": "{RULER: What's the Real Context Size of Your Long-Context Language Models?}",
+        "year": "2024",
+        "doi": "10.48550/arXiv.2404.06654",
+        "eprint": "2404.06654",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2404.06654"
+      }
+    },
+    {
+      "key": "ref12",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Wenhan Xiong and Xiang Lorraine Li and Srinivasan Iyer and Jingfei Du and Patrick Lewis and William Wang and Yashar Mehdad and Wen-tau Yih and Sebastian Riedel and Douwe Kiela and Barlas O{\\u{g}}uz",
+        "title": "{Answering Complex Open-Domain Questions with Multi-Hop Dense Retrieval}",
+        "year": "2021",
+        "url": "https://openreview.net/forum?id=EMHoBG0avc1",
+        "booktitle": "International Conference on Learning Representations"
+      }
+    },
+    {
+      "key": "ref13",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Trivedi, Harsh  and\n      Balasubramanian, Niranjan  and\n      Khot, Tushar  and\n      Sabharwal, Ashish",
+        "title": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
+        "year": "2023",
+        "url": "https://aclanthology.org/2023.acl-long.557/",
+        "booktitle": "Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+        "pages": "10014--10037",
+        "doi": "10.18653/v1/2023.acl-long.557"
+      }
+    },
+    {
+      "key": "ref14",
+      "kind": "misc",
+      "fields": {
+        "author": "Liu, Jiaqi and Su, Yaofeng and Xia, Peng and Han, Siwei and Zheng, Zeyu and Xie, Cihang and Ding, Mingyu and Yao, Huaxiu",
+        "title": "{SimpleMem: Efficient Lifelong Memory for LLM Agents}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2601.02553",
+        "eprint": "2601.02553",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2601.02553"
+      }
+    },
+    {
+      "key": "ref15",
+      "kind": "misc",
+      "fields": {
+        "author": "Fang, Jizhan and Deng, Xinle and Xu, Haoming and Jiang, Ziyan and Tang, Yuqi and Xu, Ziwen and Deng, Shumin and Yao, Yunzhi and Wang, Mengru and Qiao, Shuofei and Chen, Huajun and Zhang, Ningyu",
+        "title": "{LightMem: Lightweight and Efficient Memory-Augmented Generation}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2510.18866",
+        "eprint": "2510.18866",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2510.18866"
+      }
+    },
+    {
+      "key": "ref16",
+      "kind": "misc",
+      "fields": {
+        "author": "Zhang, Jiaquan and Zhang, Chaoning and Chen, Shuxu and Huang, Zhenzhen and Zheng, Pengcheng and Wang, Zhicheng and Guo, Ping and Mo, Fan and Bae, Sung-Ho and Zou, Jie and Wei, Jiwei and Yang, Yang",
+        "title": "{Lightweight LLM Agent Memory with Small Language Models}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2604.07798",
+        "eprint": "2604.07798",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2604.07798"
+      }
+    },
+    {
+      "key": "ref18",
+      "kind": "misc",
+      "fields": {
+        "author": "Yan, Sikuan and Yang, Xiufeng and Huang, Zuchao and Nie, Ercong and Ding, Zifeng and Li, Zonggen and Ma, Xiaowen and Bi, Jinhe and Kersting, Kristian and Pan, Jeff Z. and Schütze, Hinrich and Tresp, Volker and Ma, Yunpu",
+        "title": "{Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2508.19828",
+        "eprint": "2508.19828",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2508.19828"
+      }
+    },
+    {
+      "key": "ref19",
+      "kind": "misc",
+      "fields": {
+        "author": "Wang, Yu and Takanobu, Ryuichi and Liang, Zhiqi and Mao, Yuzhen and Hu, Yuanzhe and McAuley, Julian and Wu, Xiaojian",
+        "title": "{Mem-$\\alpha$: Learning Memory Construction via Reinforcement Learning}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2509.25911",
+        "eprint": "2509.25911",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2509.25911"
+      }
+    },
+    {
+      "key": "ref20",
+      "kind": "misc",
+      "fields": {
+        "author": "Ma, Weitao and Feng, Xiaocheng and Huang, Lei and Feng, Xiachong and Ma, Zhanyu and Xu, Jun and Gao, Jiuchong and Hao, Jinghua and He, Renqing and Qin, Bing",
+        "title": "{Fine-Mem: Fine-Grained Feedback Alignment for Long-Horizon Memory Management}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2601.08435",
+        "eprint": "2601.08435",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2601.08435"
+      }
+    },
+    {
+      "key": "ref23",
+      "kind": "misc",
+      "fields": {
+        "author": "Yu, Hongli and Chen, Tinghong and Feng, Jiangtao and Chen, Jiangjie and Dai, Weinan and Yu, Qiying and Zhang, Ya-Qin and Ma, Wei-Ying and Liu, Jingjing and Wang, Mingxuan and Zhou, Hao",
+        "title": "{MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2507.02259",
+        "eprint": "2507.02259",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2507.02259"
+      }
+    },
+    {
+      "key": "ref24",
+      "kind": "misc",
+      "fields": {
+        "author": "Xu, Derong and Wen, Yi and Jia, Pengyue and Zhang, Yingyi and zhang, wenlin and Wang, Yichao and Guo, Huifeng and Tang, Ruiming and Zhao, Xiangyu and Chen, Enhong and Xu, Tong",
+        "title": "{From Single to Multi-Granularity: Toward Long-Term Memory Association and Selection of Conversational Agents}",
+        "year": "2025",
+        "eprint": "2505.19549",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2505.19549"
+      }
+    },
+    {
+      "key": "ref25",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Qing, Peijun  and\n      Diao, Xingjian  and\n      Ma, Chiyu  and\n      Hassanpour, Saeed  and\n      Vosoughi, Soroush",
+        "title": "Tailoring Memory Granularity for Multi-Hop Reasoning over Long Contexts",
+        "booktitle": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+        "year": "2026",
+        "pages": "3648--3666",
+        "doi": "10.18653/v1/2026.findings-eacl.189",
+        "url": "https://aclanthology.org/2026.findings-eacl.189/"
+      }
+    },
+    {
+      "key": "ref26",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Zeng, Qinyang  and\n      Dong, Jinhao  and\n      LU, Wei  and\n      Du, Xiaoyong",
+        "title": "{G}ra{P}-Mem: Granularity-Aware Planning for Adaptive Memory Access in Long-Horizon {LLM} Agents",
+        "booktitle": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+        "year": "2026",
+        "pages": "51016--51032",
+        "doi": "10.18653/2026.findings-emnlp.2375",
+        "url": "https://aclanthology.org/2026.findings-emnlp.2375/"
+      }
+    },
+    {
+      "key": "ref28",
+      "kind": "misc",
+      "fields": {
+        "author": "Feng, Qi and Fan, Jicong",
+        "title": "{Recall What Is Missing: Composing Evidence from Long-Term Agent Memory}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2610.15642",
+        "eprint": "2610.15642",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2610.15642"
+      }
+    },
+    {
+      "key": "ref29",
+      "kind": "misc",
+      "fields": {
+        "author": "Li, Shixuan and Yang, Wei and Zhang, Peiyu and Cheng, Anzhe and Ping, Heng and Zhang, Xiaole and Thomason, Jesse and Ma, Xuezhe and Zhao, Yue and Bogdan, Paul",
+        "title": "{From Relevant Memories to Sufficient Evidence: Rethinking Memory Utilization in LLM Agents}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2610.22668",
+        "eprint": "2610.22668",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2610.22668"
+      }
+    },
+    {
+      "key": "ref30",
+      "kind": "misc",
+      "fields": {
+        "author": "Wei, Jiaqi and Huang, Wenxuan and Xu, Chengdong and Zhang, Xiang and Ouyang, Wanli",
+        "title": "{Beyond Retrieval Failure: Understanding Why LLMs Miss Evidence in Multi-Hop RAG}",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2610.21184",
+        "eprint": "2610.21184",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2610.21184"
+      }
+    },
+    {
+      "key": "ref31",
+      "kind": "misc",
+      "fields": {
+        "author": "Li, Feng and Tan, Kailun and Zhou, Zhibo and Wang, Youxiang and Liu, Lejun and Li, Huaigu and Du, Fei and An, Huilong",
+        "title": "{KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory}",
+        "year": "2026",
+        "eprint": "2610.41521",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2610.41521"
+      }
+    },
+    {
+      "key": "ref32",
+      "kind": "misc",
+      "fields": {
+        "author": "Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and Küttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rocktäschel, Tim and Riedel, Sebastian and Kiela, Douwe",
+        "title": "{Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}",
+        "year": "2020",
+        "doi": "10.48550/arXiv.2005.11401",
+        "eprint": "2005.11401",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    },
+    {
+      "key": "ref33",
+      "kind": "misc",
+      "fields": {
+        "author": "Karpukhin, Vladimir and Oğuz, Barlas and Min, Sewon and Lewis, Patrick and Wu, Ledell and Edunov, Sergey and Chen, Danqi and Yih, Wen-tau",
+        "title": "{Dense Passage Retrieval for Open-Domain Question Answering}",
+        "year": "2020",
+        "doi": "10.48550/arXiv.2004.04906",
+        "eprint": "2004.04906",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2004.04906"
+      }
+    },
+    {
+      "key": "ref34",
+      "kind": "misc",
+      "fields": {
+        "author": "Khattab, Omar and Zaharia, Matei",
+        "title": "{ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT}",
+        "year": "2020",
+        "doi": "10.48550/arXiv.2004.12832",
+        "eprint": "2004.12832",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2004.12832"
+      }
+    },
+    {
+      "key": "ref36",
+      "kind": "article",
+      "fields": {
+        "author": "Robertson, Stephen and Zaragoza, Hugo",
+        "title": "{The Probabilistic Relevance Framework: BM25 and Beyond}",
+        "year": "2009",
+        "doi": "10.1561/1500000019",
+        "journal": "Foundations and Trends in Information Retrieval",
+        "volume": "3",
+        "number": "4",
+        "pages": "333--389",
+        "url": "https://doi.org/10.1561/1500000019"
+      }
+    },
+    {
+      "key": "ref38",
+      "kind": "misc",
+      "fields": {
+        "author": "Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc and Zhou, Denny",
+        "title": "{Chain-of-Thought Prompting Elicits Reasoning in Large Language Models}",
+        "year": "2022",
+        "doi": "10.48550/arXiv.2201.11903",
+        "eprint": "2201.11903",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2201.11903"
+      }
+    },
+    {
+      "key": "ref39",
+      "kind": "misc",
+      "fields": {
+        "author": "Zhou, Denny and Schärli, Nathanael and Hou, Le and Wei, Jason and Scales, Nathan and Wang, Xuezhi and Schuurmans, Dale and Cui, Claire and Bousquet, Olivier and Le, Quoc and Chi, Ed",
+        "title": "{Least-to-Most Prompting Enables Complex Reasoning in Large Language Models}",
+        "year": "2022",
+        "doi": "10.48550/arXiv.2205.10625",
+        "eprint": "2205.10625",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2205.10625"
+      }
+    },
+    {
+      "key": "ref40",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Carbonell, Jaime and Goldstein, Jade",
+        "title": "{The Use of MMR, Diversity-Based Reranking for Reordering Documents and Producing Summaries}",
+        "year": "1998",
+        "doi": "10.1145/290941.291025",
+        "booktitle": "Proceedings of SIGIR",
+        "pages": "335--336",
+        "url": "https://doi.org/10.1145/290941.291025"
+      }
+    },
+    {
+      "key": "ref41",
+      "kind": "misc",
+      "fields": {
+        "author": "Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Gao, Chang and Huang, Chengen and Lv, Chenxu and Zheng, Chujie and Liu, Dayiheng and Zhou, Fan and Huang, Fei and Hu, Feng and Ge, Hao and Wei, Haoran and Lin, Huan and Tang, Jialong and Yang, Jian and Tu, Jianhong and Zhang, Jianwei and Yang, Jianxin and Yang, Jiaxi and Zhou, Jing and Zhou, Jingren and Lin, Junyang and Dang, Kai and Bao, Keqin and Yang, Kexin and Yu, Le and Deng, Lianghao and Li, Mei and Xue, Mingfeng and Li, Mingze and Zhang, Pei and Wang, Peng and Zhu, Qin and Men, Rui and Gao, Ruize and Liu, Shixuan and Luo, Shuang and Li, Tianhao and Tang, Tianyi and Yin, Wenbiao and Ren, Xingzhang and Wang, Xinyu and Zhang, Xinyu and Ren, Xuancheng and Fan, Yang and Su, Yang and Zhang, Yichang and Zhang, Yinger and Wan, Yu and Liu, Yuqiong and Wang, Zekun and Cui, Zeyu and Zhang, Zhenru and Zhou, Zhipeng and Qiu, Zihan",
+        "title": "{Qwen3 Technical Report}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2505.09388",
+        "eprint": "2505.09388",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2505.09388"
+      }
+    },
+    {
+      "key": "ref42",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Lin, Ji and Tang, Jiaming and Tang, Haotian and Yang, Shang and Chen, Wei-Ming and Wang, Wei-Chen and Xiao, Guangxuan and Dang, Xingyu and Gan, Chuang and Han, Song",
+        "booktitle": "Proceedings of Machine Learning and Systems",
+        "editor": "P. Gibbons and G. Pekhimenko and C. De Sa",
+        "pages": "87--100",
+        "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+        "url": "https://proceedings.mlsys.org/paper_files/paper/2024/file/42a452cbafa9dd64e9ba4aa95cc1ef21-Paper-Conference.pdf",
+        "volume": "6",
+        "year": "2024"
+      }
+    },
+    {
+      "key": "ref45",
+      "kind": "misc",
+      "fields": {
+        "author": "Maharana, Adyasha and Lee, Dong-Ho and Tulyakov, Sergey and Bansal, Mohit and Barbieri, Francesco and Fang, Yuwei",
+        "title": "{Evaluating Very Long-Term Conversational Memory of LLM Agents}",
+        "year": "2024",
+        "doi": "10.48550/arXiv.2402.17753",
+        "eprint": "2402.17753",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2402.17753"
+      }
+    },
+    {
+      "key": "ref46",
+      "kind": "misc",
+      "fields": {
+        "author": "Wu, Di and Wang, Hongwei and Yu, Wenhao and Zhang, Yuwei and Chang, Kai-Wei and Yu, Dong",
+        "title": "{LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory}",
+        "year": "2024",
+        "doi": "10.48550/arXiv.2410.10813",
+        "eprint": "2410.10813",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2410.10813"
+      }
+    },
+    {
+      "key": "ref47",
+      "kind": "misc",
+      "fields": {
+        "author": "Hu, Yuanzhe and Wang, Yu and McAuley, Julian",
+        "title": "{Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2507.05257",
+        "eprint": "2507.05257",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2507.05257"
+      }
+    },
+    {
+      "key": "ref48",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Yang, Zhilin  and\n      Qi, Peng  and\n      Zhang, Saizheng  and\n      Bengio, Yoshua  and\n      Cohen, William  and\n      Salakhutdinov, Ruslan  and\n      Manning, Christopher D.",
+        "title": "{H}otpot{QA}: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+        "year": "2018",
+        "url": "https://aclanthology.org/D18-1259/",
+        "booktitle": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+        "pages": "2369--2380",
+        "doi": "10.18653/v1/D18-1259"
+      }
+    },
+    {
+      "key": "ref49",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Ho, Xanh  and\n      Duong Nguyen, Anh-Khoa  and\n      Sugawara, Saku  and\n      Aizawa, Akiko",
+        "title": "Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps",
+        "year": "2020",
+        "doi": "10.18653/v1/2020.coling-main.580",
+        "booktitle": "Proceedings of the 28th International Conference on Computational Linguistics",
+        "pages": "6609--6625",
+        "url": "https://aclanthology.org/2020.coling-main.580/"
+      }
+    },
+    {
+      "key": "ref50",
+      "kind": "article",
+      "fields": {
+        "author": "Trivedi, Harsh and Balasubramanian, Niranjan and Khot, Tushar and Sabharwal, Ashish",
+        "title": "{MuSiQue: Multihop Questions via Single-hop Question Composition}",
+        "year": "2022",
+        "doi": "10.1162/tacl_a_00475",
+        "journal": "Transactions of the Association for Computational Linguistics",
+        "volume": "10",
+        "pages": "539--554",
+        "url": "https://doi.org/10.1162/tacl_a_00475"
+      }
+    },
+    {
+      "key": "ref51",
+      "kind": "misc",
+      "fields": {
+        "author": "Zhang, Yanzhao and Li, Mingxin and Long, Dingkun and Zhang, Xin and Lin, Huan and Yang, Baosong and Xie, Pengjun and Yang, An and Liu, Dayiheng and Lin, Junyang and Huang, Fei and Zhou, Jingren",
+        "title": "{Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models}",
+        "year": "2025",
+        "doi": "10.48550/arXiv.2506.05176",
+        "eprint": "2506.05176",
+        "archivePrefix": "arXiv",
+        "url": "https://arxiv.org/abs/2506.05176"
+      }
+    },
+    {
+      "key": "ref52",
+      "kind": "misc",
+      "fields": {
+        "author": "Hu, Edward J. and Shen, Yelong and Wallis, Phillip and Allen-Zhu, Zeyuan and Li, Yuanzhi and Wang, Shean and Wang, Lu and Chen, Weizhu",
+        "title": "{LoRA: Low-Rank Adaptation of Large Language Models}",
+        "year": "2021",
+        "url": "https://arxiv.org/abs/2106.09685",
+        "eprint": "2106.09685",
+        "archivePrefix": "arXiv"
+      }
+    },
+    {
+      "key": "ref53",
+      "kind": "article",
+      "fields": {
+        "author": "Efron, B.",
+        "title": "{Bootstrap Methods: Another Look at the Jackknife}",
+        "year": "1979",
+        "doi": "10.1214/aos/1176344552",
+        "journal": "The Annals of Statistics",
+        "volume": "7",
+        "number": "1",
+        "pages": "1--26",
+        "url": "https://doi.org/10.1214/aos/1176344552"
+      }
+    },
+    {
+      "key": "ref54",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Song, Huatong  and\n      Jiang, Jinhao  and\n      Tian, Wenqing  and\n      Chen, Zhipeng  and\n      Wu, Yuhuan  and\n      Zhao, Jiahao  and\n      Min, Yingqian  and\n      Zhao, Wayne Xin  and\n      Fang, Lei  and\n      Wen, Ji-Rong",
+        "title": "Smart-Searcher: Incentivizing the Dynamic Knowledge Acquisition of {LLM}s via Reinforcement Learning",
+        "year": "2025",
+        "doi": "10.18653/v1/2025.findings-emnlp.731",
+        "booktitle": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2025",
+        "pages": "13572--13586",
+        "url": "https://aclanthology.org/2025.findings-emnlp.731/"
+      }
+    },
+    {
+      "key": "ref55",
+      "kind": "inproceedings",
+      "fields": {
+        "author": "Liu, Qichuan  and\n      Zhang, Chentao  and\n      Zheng, Chenfeng  and\n      Hu, Guosheng  and\n      Li, Xiaodong  and\n      Zhang, Zhihong",
+        "title": "Beyond the Answer: Advancing Multi-Hop {QA} with Fine-Grained Graph Reasoning and Evaluation",
+        "year": "2025",
+        "doi": "10.18653/v1/2025.acl-long.1142",
+        "booktitle": "Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+        "pages": "23433--23456",
+        "url": "https://aclanthology.org/2025.acl-long.1142/"
+      }
+    },
+    {
+      "key": "ref56",
+      "kind": "article",
+      "fields": {
+        "author": "Liang, Xuechen and Tao, Meiling and Xia, Yinghui and Wang, Jianhui and Li, Kun and Wang, Yijin and He, Yangfan and Yang, Jingsong and Shi, Tianyu and Wang, Yuantao and Zhang, Miao and Wang, Xueqian",
+        "title": "{SAGE: Self-evolving Agents with Reflective and Memory-augmented Abilities}",
+        "journal": "Neurocomputing",
+        "volume": "647",
+        "pages": "130470",
+        "year": "2025",
+        "doi": "10.1016/j.neucom.2025.130470",
+        "url": "https://doi.org/10.1016/j.neucom.2025.130470"
+      }
+    },
+    {
+      "key": "ref57",
+      "kind": "article",
+      "fields": {
+        "author": "Guo, Tiezheng and Wang, Chen and Liu, Yanyi and Tang, Jiawei and Li, Pan and Xu, Sai and Yang, Qingwen and Gao, Xianlin and Li, Zhi and Wen, Yingyou",
+        "title": "{Leveraging inter-chunk interactions for enhanced retrieval in large language model-based question answering}",
+        "journal": "Neurocomputing",
+        "volume": "650",
+        "pages": "130931",
+        "year": "2025",
+        "doi": "10.1016/j.neucom.2025.130931",
+        "url": "https://doi.org/10.1016/j.neucom.2025.130931"
+      }
+    },
+    {
+      "key": "ref58",
+      "kind": "inproceedings",
+      "fields": {
+        "title": "{LLML}ingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+        "author": "Pan, Zhuoshi  and\n      Wu, Qianhui  and\n      Jiang, Huiqiang  and\n      Xia, Menglin  and\n      Luo, Xufang  and\n      Zhang, Jue  and\n      Lin, Qingwei  and\n      R{\\\"u}hle, Victor  and\n      Yang, Yuqing  and\n      Lin, Chin-Yew  and\n      Zhao, H. Vicky  and\n      Qiu, Lili  and\n      Zhang, Dongmei",
+        "editor": "Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek",
+        "booktitle": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2024",
+        "month": "aug",
+        "year": "2024",
+        "address": "Bangkok, Thailand",
+        "publisher": "Association for Computational Linguistics",
+        "url": "https://aclanthology.org/2024.findings-acl.57/",
+        "doi": "10.18653/v1/2024.findings-acl.57",
+        "pages": "963--981"
+      }
+    }
+  ],
+  "locator_resolution": {
+    "ref36": "Publisher PDF: volume3, issue4, pages333--389; overrides conflicting Crossref locator",
+    "ref42": "Published MLSys2024 version, volume6, pages87--100",
+    "ref12": "ICLR2021 publication; arXiv first submission2020"
+  }
+}
